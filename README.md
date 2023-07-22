@@ -1,4 +1,4 @@
-[Homework 1](brilliantic/genius-homework-1)
+[Homework 1](brilliantic/genius-homework-1/n)
 [Homework 2](brilliantic/genius-homework-2)
 [Homework 3](brilliantic/genius-homework-3)
 [Homework 4](brilliantic/enius-homework-4)
