@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--color-brand-dark);
+    background-color: var(--color-brand-light);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+p {
+    margin-top: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+a {
+    display: inline-block;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}

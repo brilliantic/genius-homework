@@ -1,0 +1,104 @@
+.images {
+    position: relative;
+    display: none;
+    gap: 20px;
+
+    @media screen and (min-width: $bp-tablet) {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+        flex-basis: 45%;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+        gap: 40px;
+    }
+
+    &__before,
+    &__after {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        flex-shrink: 0;
+
+        @media screen and (min-width: $bp-desktop) {
+            width: 328px;
+            height: 328px;
+        }
+    }
+
+    &__before {
+        position: relative;
+        top: 160px;
+        left: 20px;
+
+        @media screen and (min-width: $bp-desktop) {
+            top: -40px;
+            left: 0;
+        }
+    }
+    
+    &__after {
+        position: absolute;
+        right: -20px;
+        bottom: 35px;
+
+        @media screen and (min-width: $bp-desktop) {
+            right: 0;
+            bottom: 0;
+        }
+    }
+
+    &__star1 {
+        position: absolute;
+        fill: #011F4A;
+        left: 90px;
+        bottom: 270px;
+        animation: stars 3s infinite;
+
+        @media screen and (min-width: $bp-desktop) {
+            left: 140px;
+            bottom: 220px;
+        }
+    }
+    
+    @keyframes stars {
+        0% {
+            transform: rotate(0deg);
+        }
+    
+        50% {
+            transform: rotate(100deg);
+        }
+    
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    
+    &__star2 {
+        position: absolute;
+        fill: var(--color-brand);
+        top: 170px;
+        right: 0;
+        animation: stars 3s infinite;
+
+        @media screen and (min-width: $bp-desktop) {
+            top: 10px;
+            right: 0;
+        }
+    }
+    
+    &__star3 {
+        position: absolute;
+        fill: var(--color-secondary-dark);
+        top: 400px;
+        right: 30px;
+        animation: stars 3s infinite;
+
+        @media screen and (min-width: $bp-desktop) {
+            top: 200px;
+            right: 30px;
+        }
+    }
+}

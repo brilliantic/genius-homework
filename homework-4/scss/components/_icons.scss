@@ -1,0 +1,78 @@
+.social {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        justify-content: space-between;
+    }
+
+    &__icon {
+        fill: var(--color-brand-dark);
+        width: 32px;
+        height: 32px;
+        transition: fill 0.2s;
+    
+        &:hover {
+            fill: var(--color-brand);
+        }
+    }
+}
+
+.procedure-icon {
+    width: 44px;
+    height: 44px;
+    fill: var(--color-brand-dark);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 2px solid var(--color-brand-dark);
+    transition: background-color 0.2s;
+
+    &:hover {
+        fill: var(--color-brand-light);
+        background-color: var(--color-brand);
+        border: 2px solid var(--color-brand-light);
+    }
+
+    &__arrow {
+        transform: rotate(180deg);
+    }
+
+    &.next, &.prev {
+        transform: scale(0.8);
+    }
+        @media screen and (min-width: $bp-desktop) {
+            transform: scale(1);
+        }
+}
+
+.footer-logo {
+    width: 83px;
+    height: 42px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 24px;
+
+
+    &__icon {
+        fill: var(--color-brand-light);
+        transition: fill 0.2s;
+        width: 32px;
+        height: 32px;
+
+        @media screen and (min-width: $bp-desktop) {
+            width: 42px;
+            height: 42px;
+        }
+
+        &:hover {
+            fill: var(--color-brand);
+        }
+    }
+}
