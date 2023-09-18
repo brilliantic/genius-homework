@@ -1,0 +1,72 @@
+.section-about-us {
+    padding: 0;
+
+    &__container {
+        display: flex;
+        gap: 72px;
+        justify-content: center;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding-top: 0px;
+        max-width: 320px;
+
+        @media screen and (min-width: $bp-tablet) {
+            padding-bottom: 30px;
+            flex-basis: 93%;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            padding-top: 40px;
+            max-width: 700px;
+            flex-basis: 55%;
+        }        
+    }
+
+    &__title {
+        width: 264px;
+        font-size: 32px;
+        font-family: Play;
+        font-weight: 500;
+        line-height: 1.2;
+        margin-bottom: 24px;
+
+        @media screen and (min-width: $bp-tablet) {
+            font-weight: 700;
+            font-size: 64px;
+            width: 529px;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__description {
+        margin-bottom: 16px;
+
+        @media screen and (min-width: $bp-tablet) {
+            font-size: 22px;
+            line-height: 1.7;
+            margin-bottom: 40px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__star1 {
+        position: absolute;
+        fill: #011F4A;
+        width: 40px;
+        height: 40px;
+        left: 250px;
+        bottom: -30px;
+        animation: stars 3s infinite;
+
+        @media screen and (min-width: $bp-tablet) {
+            display: none;
+        }
+    }
+}

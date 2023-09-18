@@ -1,0 +1,47 @@
+.why-us-card {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    padding: 24px 32px;
+    width: 316px;
+    height: 181px;
+    border-radius: 32px;
+    background-color: var(--color-brand-light);
+    box-shadow: 0px 4px 4px 0px #a8c6f561;
+
+    @media screen and (min-width: $bp-tablet) {
+        padding: 16px 20px;
+        width: 235px;
+        height: 152px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+        padding: 24px 32px;
+        width: 316px;
+        height: 181px;
+    }
+
+    &__text {
+        width: 252px;
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 0;
+
+        @media screen and (min-width: $bp-tablet) {
+            font-size: 14px;
+            width: 100%;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            font-size: 18px;
+            width: 252px;
+        }
+    }
+
+    &__icon {
+        fill: var(--color-brand);
+        width: 48px;
+        height: 48px;
+    }
+}
