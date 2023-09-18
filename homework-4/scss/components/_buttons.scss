@@ -1,0 +1,64 @@
+.button {
+    padding: 16px 32px;
+    color: var(--color-brand-light);
+    font-size: 18px;
+    font-weight: 600;
+    background-color: var(--color-brand);
+    border-radius: 32px;
+    border: 2px solid var(--color-brand);
+    margin-bottom: 14px;
+    transition: background-color 0.2s;
+
+    &:hover {
+        color: var(--color-brand-dark);
+        background-color: transparent;
+    }
+
+    &__description {
+        font-size: 11px;
+        width: 186px;
+        text-align: center;
+        margin-bottom: 0;
+
+        @media screen and (min-width: $bp-desktop) {
+            width: 238px;
+            font-size: 12px;
+        }
+        
+    }
+}
+
+.form-button {
+    padding: 12px 24px;
+    color: var(--color-brand-light);
+    font-size: 16px;
+    font-weight: 600;
+    background-color: var(--color-brand);
+    border-radius: 32px;
+    border: 2px solid var(--color-brand);
+    margin-bottom: 8px;
+    transition: background-color 0.2s;
+
+    @media screen and (min-width: $bp-tablet) {
+        padding: 16px 32px;
+        font-size: 18px;
+    }
+
+    &:hover {
+        background-color: transparent;
+    }
+
+    &__description {
+        margin: 0 auto;
+        color: var(--color-secondary-dark);
+        max-width: 220px;
+        font-size: 12px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    &__description-link {
+        color: var(--color-secondary-dark);
+        text-underline-offset: 2px;
+    }
+}

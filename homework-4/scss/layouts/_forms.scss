@@ -1,0 +1,29 @@
+.contact-form {
+    padding: 0 8px;
+
+    @media screen and (min-width: $bp-tablet) {
+        padding: 0;
+    }
+
+    &__field {
+        position: relative;
+        margin-bottom: 16px;
+    }
+}
+
+.modal-form {
+    padding: 0 10px;
+
+    @media screen and (min-width: $bp-tablet) {
+        padding: 0 63px;
+    }
+
+    &__field {
+        position: relative;
+        margin-bottom: 16px;
+
+        @media screen and (min-width: $bp-tablet) {
+            margin-bottom: 24px;
+        }
+    }
+}

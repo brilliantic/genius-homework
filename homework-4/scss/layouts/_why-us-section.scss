@@ -1,0 +1,21 @@
+.why-us-section {
+    padding-top: 176px;
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        justify-content: center;
+
+        @media screen and (min-width: $bp-tablet) {
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+            justify-content: center;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            gap: 56px;
+        }
+    }
+}
